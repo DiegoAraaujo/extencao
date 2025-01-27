@@ -6,3 +6,4 @@ df = pd.read_csv('dados_formulario.csv')
 
 pt.press("winleft")
 pt.write("chrome")
+pt.press("enter")
