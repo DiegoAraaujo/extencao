@@ -1,0 +1,118 @@
+/* Definindo a paleta de cores */
+:root {
+  --cor-principal: #6c5ce7;
+  --cor-secundaria: #a29bfe;
+  --cor-acentuada: #dfe6e9;
+  --cor-fundo: #f5f5f5;
+  --cor-texto: #2d3436;
+}
+
+/* Resetando o estilo padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--cor-principal);
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--cor-principal);
+  margin-top: 30px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--cor-principal);
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
+  border-color: var(--cor-principal);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--cor-principal);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--cor-secundaria);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--cor-secundaria);
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--cor-acentuada);
+}
+
+tbody tr:hover {
+  background-color: #dfe6e9;
+}
